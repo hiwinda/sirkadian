@@ -9,10 +9,12 @@
     <!-- CSS Bootstrap & Fontawesome-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <!-- JavaScript Bootstrap -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fontawesome-all.min.js"></script>
+    <script src="assets/js/slick.js"></script>
     <!-- CSS Main -->
     <link href="assets/css/main.css" rel="stylesheet" />
     <!-- JS Main -->
@@ -20,15 +22,45 @@
 </head>
 
 <body>
-    <!-- header -->
-    <div class="sk-header">
-        <div class="container">
-            <div class="sk-header__row">
-                <div class="sk-header__logo">Sirkadian</div>
-                <div class="sk-header__search">
+    <header class="header-main navbar navbar-expand-md">
+        <!-- header -->
+        <div class="sk-header">
+            <div class="container">
+                <div class="sk-header__row">
+                    <a class="sk-header__logo">
+                        <img src="assets/img/logo3.png" alt="logo">
+                    </a>
+                    <div class="sk-header__search">
+                        <form class="sk-search__form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Ketik untuk mencari..."
+                                    aria-label="Search" />
+                                <div class="input-group-append">
+                                    <span class="fas fa-search"></span>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <div class="sk-navbar">
+            <div class="container">
+                <div class="sk-navbar__content collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav list-unstyled clearfix">
+                        <li class="nav-item"><a href="#" class="nav-link">BERITA TERKINI</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">ARTIKEL DATA DAN INFOGRAFIK</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">LAPORAN INDEPTH</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">TENTANG KAMI</a></li>
+                    </ul>
                     <form class="sk-search__form">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Ketik untuk mencari..." aria-label="Search" />
+                            <input type="text" class="form-control" placeholder="Ketik untuk mencari..."
+                                aria-label="Search" />
                             <div class="input-group-append">
                                 <span class="fas fa-search"></span>
                             </div>
@@ -37,20 +69,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- navbar -->
-    <div class="sk-navbar">
-        <div class="container">
-            <div class="sk-navbar__content">
-                <ul class="navbar-nav list-unstyled clearfix">
-                    <li class="nav-item"><a href="#" class="nav-link">BERITA TERKINI</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">ARTIKEL DATA DAN INFOGRAFIK</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">LAPORAN INDEPTH</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">TENTANG KAMI</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </header>
     <div class="sk-content">
         <section class="sk-polling">
             <div class="container">
@@ -114,7 +133,9 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <a class="sk-footer__logo">Sirkadian</a>
+                    <a class="sk-footer__logo">
+                        <img src="assets/img/logo2_white.png" alt="img">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <ul class="sk-footer__sosmed list-unstyled">
